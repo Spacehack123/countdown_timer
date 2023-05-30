@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Francois One', sans-serif;
+	background-color: rgb(93, 94, 93);
+	background-image: linear-gradient(140deg, rgb(36, 190, 175) 0%, rgb(160, 189, 164) 100%);
+	/* margin-left: -430px; */
+}
+
+.counter-app {
+	position: relative;
+}
+
+.app-body {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	height: 600px;
+	border-radius: 50px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+}
+
+.image-section {
+	position: relative;
+	height: 400px;
+	background-image: url('default.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.settings-btn {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	padding: 20px 30px;
+	font-size: 32px;
+	background-color: #fff;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.settings-btn:hover {
+	color: #f9f9f9f9;
+	background-color: #333;
+}
+.time-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 400px;
+	align-items: center;
+	background-color: #fff;
+	z-index: 100;
+}
+
+h3 {
+	font-size: 40px;
+	text-align: center;
+}
+.time-cards {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px 0;
+	width: 18%;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 30px;
+}
+.number {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 40px;
+}
+.card-title {
+	text-align: center;
+}
+
+.settings {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	padding: 50px 30px;
+	background-color: #fff;
+	top: 5px;
+	right: 5px;
+	width: 400px;
+	border: 1px solid rgb(95, 93, 93);
+	border-radius: 30px;
+	opacity: 0;
+	transition: opacity 0.3s, transform.5s;
+}
+
+.active {
+	transform: translateX(-610px);
+	opacity: 1;
+}
+h1 {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+label {
+	margin-bottom: 10px;
+}
+input {
+	margin-bottom: 30px;
+	padding: 10px 20px;
+	width: 100%;
+	border-radius: 15px;
+	border: 1px solid rgb(95, 93, 93);
+}
+
+.date {
+	text-align: center;
+}
+.save {
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 1px solid rgb(95, 93, 93);
+	transition: background-color 0.3s, color 0.3s;
+}
+.save:hover {
+	color: #f9f9f9f9;
+	background-color: #333;
+}
